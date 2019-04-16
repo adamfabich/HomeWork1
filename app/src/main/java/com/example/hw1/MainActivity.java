@@ -115,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 soundID = data.getIntExtra("sound", 0);
             }
         }else{
+            Toast.makeText(getApplicationContext(), "Powrót", Toast.LENGTH_LONG).show();
         }
     }
 

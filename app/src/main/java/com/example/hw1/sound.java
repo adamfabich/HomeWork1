@@ -27,11 +27,12 @@ public class sound extends AppCompatActivity {
         rb5 = findViewById(R.id.rb5);
         rb6 = findViewById(R.id.rb6);
 
-        rb2.setText("Dźwięk 1");
-        rb3.setText("Dźwięk 2");
-        rb4.setText("Dźwięk 3");
-        rb5.setText("Dźwięk 4");
-        rb6.setText("Dźwięk 5");
+
+        rb1.setText("Dźwięk 1");
+        rb2.setText("Dźwięk 2");
+        rb3.setText("Dźwięk 3");
+        rb4.setText("Dźwięk 4");
+        rb5.setText("Dźwięk 5");
     }
 
     public void cancel(View view) {

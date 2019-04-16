@@ -16,11 +16,18 @@
         android:layout_marginBottom="60dp">
 
         <RadioButton
-            android:id="@+id/rb2"
+            android:id="@+id/rb1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="choose" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="choose"/>
 
         <RadioButton
             android:id="@+id/rb3"
@@ -38,13 +45,6 @@
 
         <RadioButton
             android:id="@+id/rb5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="choose"/>
-
-        <RadioButton
-            android:id="@+id/rb6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"

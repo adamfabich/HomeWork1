@@ -20,16 +20,13 @@ public class contact extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
-        //znajdz widok biezacej aktywnosci i przypisz do odpowiedniego typu danych
+
         sp= findViewById(R.id.spinner);
 
-        contacts = getResources().getStringArray(R.array.contacts); // odczytaj tablic string-array
-        //do tablicy contacts
+        contacts = getResources().getStringArray(R.array.contacts);
 
-        // ArrayAdapter zwraca widok dla kazdego obiektu i używany z widżetami interfejsu takimi jak Spinner czy ListView
-        //Utwórz ArrayAdapter przy użyciu tablicy stringów i domyślnego układu spinnera
         aa = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, contacts);
-        sp.setAdapter(aa); //ustaw array do spinnera
+        sp.setAdapter(aa);
     }
 
     public void cancel(View view) {
@@ -37,8 +34,8 @@ public class contact extends AppCompatActivity {
     }
 
     public void ok(View view) {
-        pos=sp.getSelectedItemPosition(); //Zwraca pozycję aktualnie wybranego elementu w zestawie danych adaptera
-        result = contacts[pos]; // tablica pozycji wybranych elementow
+        pos=sp.getSelectedItemPosition();
+        result = contacts[pos];
         Intent i = new Intent();
         i.putExtra("contact", result);
         setResult(RESULT_OK, i);
