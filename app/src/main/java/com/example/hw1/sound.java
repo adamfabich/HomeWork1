@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class sound extends AppCompatActivity {
 
     RadioGroup rg;
-    RadioButton rb2, rb3, rb4, rb5, rb6;
+    RadioButton rb1, rb2, rb3, rb4, rb5;
     boolean check = false;
     int soundID = 0;
 
@@ -21,11 +21,11 @@ public class sound extends AppCompatActivity {
         setContentView(R.layout.activity_sound);
 
         rg = findViewById(R.id.rg);
+        rb1 = findViewById(R.id.rb1);
         rb2 = findViewById(R.id.rb2);
         rb3 = findViewById(R.id.rb3);
         rb4 = findViewById(R.id.rb4);
         rb5 = findViewById(R.id.rb5);
-        rb6 = findViewById(R.id.rb6);
 
 
         rb1.setText("Dźwięk 1");
@@ -46,7 +46,7 @@ public class sound extends AppCompatActivity {
             setResult(RESULT_OK, i);
             finish();
         }else{
-            Toast.makeText(getApplicationContext(), "Select sound", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Wybierz dźwięk", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -55,19 +55,19 @@ public class sound extends AppCompatActivity {
 
         if(check) {
             switch (view.getId()) {
-                case R.id.rb2:
+                case R.id.rb1:
                     soundID = R.raw.mario;
                     break;
-                case R.id.rb3:
+                case R.id.rb2:
                     soundID = R.raw.ring01;
                     break;
-                case R.id.rb4:
+                case R.id.rb3:
                     soundID = R.raw.ring02;
                     break;
-                case R.id.rb5:
+                case R.id.rb4:
                     soundID = R.raw.ring03;
                     break;
-                case R.id.rb6:
+                case R.id.rb5:
                     soundID = R.raw.ring04;
                     break;
             }

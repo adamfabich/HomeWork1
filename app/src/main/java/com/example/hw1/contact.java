@@ -20,11 +20,8 @@ public class contact extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
-
         sp= findViewById(R.id.spinner);
-
         contacts = getResources().getStringArray(R.array.contacts);
-
         aa = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, contacts);
         sp.setAdapter(aa);
     }

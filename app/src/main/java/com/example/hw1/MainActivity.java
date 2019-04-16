@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void contact(View view) {
         Intent intent = new Intent(getApplicationContext(), contact.class);
-        startActivityForResult(intent, 1);
+        startActivityForResult(intent,1);
     }
 
     public void sound(View view) {
